@@ -1,0 +1,93 @@
+.transparent {
+    height: 100%;
+    width: 100%;
+    opacity: .8;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+header {
+    text-align: center;
+    font-family: Papyrus, fantasy;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+nav {
+    font-size: 0;
+}
+nav div:nth-child(3n+1) {
+    background-color: cyan;
+}
+nav div:nth-child(3n+2) {
+    background-color: pink;
+}
+nav div:nth-child(3n+3) {
+    background-color: lightgreen;
+}
+nav div {
+    font-family: 'Big Calson', serif;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 12.5%;
+    font-size: 24pt;
+    box-sizing: border-box;
+    display: inline-block;
+}
+h1+span {
+  font-family: impact;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (max-width: 1440px) {
+    nav div {
+        width: 12.5%;
+    }
+    h1+span::after {
+      content: "Large";
+      color: green;
+      font-size: 35pt;
+    }
+    body {
+      background-image: url('images/bricks.jpg');
+    }
+}
+@media (max-width: 1100px) {
+  nav div {
+    width: 25%;
+  }
+  h1+span::after {
+    content: "Medium";
+    color: yellow;
+    font-size: 25pt;
+  }
+  body {
+    background-image: url('images/metal.jpg');
+  }
+}
+@media (max-width: 800px) {
+  nav div {
+    width: 50%;
+  }
+  h1+span::after {
+    content: "Small";
+    color: red;
+    font-size: 20pt;
+  }
+  body {
+    background-image: url('images/sand.jpg');
+  }
+}
+@media (max-width: 500px) {
+  nav div {
+    width: 100%;
+  }
+  h1+span::after {
+    content: "Extra Small";
+    color: purple;
+    font-size: 15pt;
+  }
+  body {
+    background-image: url('images/wood.png');
+  }
+}
